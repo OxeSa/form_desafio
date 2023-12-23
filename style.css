@@ -1,0 +1,305 @@
+/* #293241 (azul escuro) -- #BFD7E4 (ciano) -- #f96152 (laranja) -- branco e preto --- */
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', sans-serif;*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#BFD7E4 ;
+    margin: 0 0 0 0;
+}
+    
+
+ header{
+    
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#293241 ;
+    z-index: 1;
+}
+.Text {
+    
+    color:white;
+    height: 190px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    
+} 
+
+.Text h1 {
+    font-family: 'Staatliches', sans-serif;
+    width: 285px;
+    height: 45px;
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-top: 100px;
+    font-weight: 400;
+    color:white;
+}
+
+.Text p {
+    font-family: 'Poppins', sans-serif;
+    width: 390px;
+    margin-top: 0; 
+}
+
+img {
+    display: flex;
+    margin: 0 auto 32px;
+}
+
+
+header .titulo {
+    background-color:#f96152;
+    width: 750px;
+    height: 130px;
+    border-radius: 20px 20px 0px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.titulo h1{
+    color: #FFF;
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+
+form {
+    background-color:#FFF;
+    width: 750px;
+    height: 1075px;
+    border-radius: 0px 0px 20px 20px;
+    margin: 484px auto 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    padding: 30px 50px 175px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Names {
+    display: flex;
+    gap: 30px;
+}
+
+.Names input {
+    width: 310px;
+}
+
+input {
+    border-radius: 8px;
+    background-color: #FAFAFC; 
+    height: 55px;
+    padding: 10px;
+    border: 2px solid #E6E6F0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+input:hover{
+    background-color: #f1f1f1; 
+}
+
+input:focus-visible{
+    outline: 2px solid #293241
+}
+
+input:invalid{
+    border: 3px solid red;
+}
+
+
+
+label{
+    color: #4E4958;
+    line-height: 30px;
+}
+    
+.mail {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin: 10px 0 20px;
+
+}
+
+#email{
+width: 650px;
+}
+
+
+span {
+    font-size: 12px;
+    color: #C1BCCC;
+    margin-left: 2px;
+}
+
+fieldset{
+    margin: 0 auto;    
+    border: none;
+    width: 100%;
+}
+
+fieldset legend {
+    color: #253B51;
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #E6E6F0 ;
+    padding: 0px 0 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.linha {
+
+    background-color: #E6E6F0;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    border-radius: 8px;
+    background-color: #FAFAFC; 
+    padding:0 10px;
+    border: 2px solid #E6E6F0;
+    font-family: 'Poppins', sans-serif;   
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 300px;
+    height:55px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.Mentor{
+    color: #4E4958;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#mentor {
+
+    border-radius: 8px;
+    background-color: #FAFAFC; 
+    width: 650px;
+    height: 170px;
+    padding: 10px;
+    border: 2px solid #E6E6F0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+
+.checkbox-wrapper{
+    position: relative;
+
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    margin: 20px 0 30px;
+}
+
+.checkbox-wrapper input{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    margin: 20px 0 30px;
+    opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 2px solid #E6E6F0;
+    border-radius: 8px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath d='M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z' fill='currentColor' /%3E%3C/svg%3E");;
+
+}
+
+.checkbox-wrapper input:focus + label::before{
+    outline: 2px solid black;
+ 
+}
+
+
+
+.col-3{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.col-3 > div:nth-child(1) input {
+
+   margin-right: 10px;
+   width: 310px;
+   
+}
+
+
+.col-3 input {
+    width: 150px;
+    cursor: text;
+    
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+#button{
+    display: flex;  
+    width: 650px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f96152;
+    margin: 65px 0 0;
+    color: #FFF;
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+
+
+
